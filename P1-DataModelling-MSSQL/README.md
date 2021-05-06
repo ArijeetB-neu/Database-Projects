@@ -4,7 +4,7 @@
 
 This project proposal focuses on helping an NGO to provide services offered by Primary health centers for underprivileged people. We propose to design a database in which NGO provides medical benefits to underprivileged people by providing an application wherein our NGO agency can login and can access the data provided by hospitals. Our strategy is to provide convenient medical platform for those who cannot afford a high quality medical care or are not able to access proper medical treatment.
 
-### The objective of the project are-
+### The objectives of the project are-
 1. Showcase various MSSQL functionality like Functions, Stored Procedures, Views, Triggers in practical setting
 2. Setting up the data into Power BI and analyze the data with visualization
 

@@ -5,8 +5,8 @@
 This project proposal focuses on helping an NGO to provide services offered by Primary health centers for underprivileged people. We propose to design a database in which NGO provides medical benefits to underprivileged people by providing an application wherein our NGO agency can login and can access the data provided by hospitals. Our strategy is to provide convenient medical platform for those who cannot afford a high quality medical care or are not able to access proper medical treatment.
 
 ### The objective of the project are-
-1)Showcase various MSSQL functionality like Functions, Stored Procedures, Views, Triggers in practical setting
-2)Setting up the data into Power BI and analyze the data with visualization
+1. Showcase various MSSQL functionality like Functions, Stored Procedures, Views, Triggers in practical setting
+2. Setting up the data into Power BI and analyze the data with visualization
 
 ## Entities/tables
 - NGO - contains details of any given NGO
@@ -25,8 +25,8 @@ This project proposal focuses on helping an NGO to provide services offered by P
 - Bill - finally, bill entity generates the bill amount to be paid which is paid by the NGO if the patientIncome attribute from the patient table qualifies the patient to be covered by the NGO
 
 ## Files
-1) Hospital NGO Services DataBase.pptx - presentation showcasing the ER diagram, different SQL scripts, data visualization with Power BI
-2) SQL Scripts
+1. Hospital NGO Services DataBase.pptx - presentation showcasing the ER diagram, different SQL scripts, data visualization with Power BI
+2. SQL Scripts
 - DDL.sql - this script creates all the needed tables and defines the database. It defines constraints like primary keys and foreign keys, adds index on tables for query optimization
 - Insert Query.sql - this script inserts data into all of the tables defined in the above script
 - Function.sql - this script creates a function to get details of the medicines prescribed to a patient by a given doctor

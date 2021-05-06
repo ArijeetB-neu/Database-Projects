@@ -24,13 +24,13 @@ This project proposal focuses on helping an NGO to provide services offered by P
 - pharmacy - pharmacy entity is connected to prescription table and each prescriptionId has a single medicine details which the patient gets from the pharmacy entity
 - Bill - finally, bill entity generates the bill amount to be paid which is paid by the NGO if the patientIncome attribute from the patient table qualifies the patient to be covered by the NGO
 
-## Files
+## Project Files
 1. Hospital NGO Services DataBase.pptx - presentation showcasing the ER diagram, different SQL scripts, data visualization with Power BI
 2. SQL Scripts
-- DDL.sql - this script creates all the needed tables and defines the database. It defines constraints like primary keys and foreign keys, adds index on tables for query optimization
-- Insert Query.sql - this script inserts data into all of the tables defined in the above script
-- Function.sql - this script creates a function to get details of the medicines prescribed to a patient by a given doctor
-- StoredProcedures.sql - this script creates 3 stored procedures to show different details of patients and update patients information
-- Views.sql - this script creates a temporary table called People to show details of every person in the DataBase
-- Triggers.ql - this script creates an instead of trigger to automatically calculate taxes on medicines based on the total amount to be paid
-- Select Queries - this script runs all the Functions, StoredProcedures, Views
+    - DDL.sql - this script creates all the needed tables and defines the database. It defines constraints like primary keys and foreign keys, adds index on tables for query optimization
+    - Insert Query.sql - this script inserts data into all of the tables defined in the above script
+    - Function.sql - this script creates a function to get details of the medicines prescribed to a patient by a given doctor
+    - StoredProcedures.sql - this script creates 3 stored procedures to show different details of patients and update patients information
+    - Views.sql - this script creates a temporary table called People to show details of every person in the DataBase
+    - Triggers.ql - this script creates an instead of trigger to automatically calculate taxes on medicines based on the total amount to be paid
+    - Select Queries - this script runs all the Functions, StoredProcedures, Views

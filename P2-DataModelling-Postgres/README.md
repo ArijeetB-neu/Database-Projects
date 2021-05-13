@@ -26,9 +26,9 @@ Sample Record :
 
 ### Fact Table
 **songplays** - records in log data associated with song plays i.e. records with page NextSong
-
-> songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
-
+```
+ songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+```
 ### Dimension Tables
 #### users - users in the app
 ```
@@ -66,11 +66,11 @@ Sample Record :
 ## How to Run
 
 - Run the following query in console to create the tables
-> python3 create_tables.py
+    `$ python3 create_tables.py`
 - Use test.ipynb Jupyter Notebook to interactively verify that all tables were created. Make sure to click "Restart kernel" to close the connection to the database after running this notebook.
 
 - Run the following query in console to create the ETL pipeline using Python
->python3 etl.py
+    `$ python3 etl.py`
 - Use test.ipynb Jupyter Notebook to interactively verify that records were inserted in the correct tables. Make sure to click "Restart kernel" to close the connection to the database after running this notebook.
 - Use SQLQueryExamples.ipynb to see example queries and results for song play analysis. Make sure to click "Restart kernel" to close the connection to the database after running this notebook.
 

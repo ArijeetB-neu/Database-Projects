@@ -63,7 +63,7 @@ DWH_DB_PASSWORD=
 DWH_PORT=
 ```
 
-2. Run the cells of *create_redshift_cluster.ipynb* notebook up till Step 4 to set up the needed cloud infrastructure on AWS for this project.
+2. Run the cells of `create_redshift_cluster.ipynb` notebook up till Step 4 to set up the needed cloud infrastructure on AWS for this project.
 
 
 3. Run the *create_tables* script to set up the database staging and analytical tables
@@ -74,17 +74,17 @@ DWH_PORT=
 
     `$ python create_tables.py`
 
-5. Then go back to Step 5 of *create_cluster.ipynb* notebook to check the commands are executing and everything is working fine. Finally, clean up all your resources and make sure all AWS resources have been properly shut.
+5. Then go back to Step 5 of `create_cluster.ipynb` notebook to check the commands are executing and everything is working fine. Finally, clean up all your resources and make sure all AWS resources have been properly shut.
 
 ## Project structure
 
 This project includes five script files:
 
-- create_redshift_cluster.ipynb is where the AWS components for this project are created programmatically, along with a few queries which has been made to validate that the created star schema has been completed successfully.
-- create_table.py is where the star schema in Redshift, consisting of fact and dimension tables are created.
-- etl.py is where data gets loaded from S3 buckets into staging tables on Redshift and then inserted into the analytics tables on Redshift.
-- sql_queries.py is where SQL statements are defined, which are then used by etl.py, create_table.py and create_redshift_cluster.ipynb.
-- README.md is current file with basic project description and instruction.
+- create_redshift_cluster.ipynb - is where the AWS components for this project are created programmatically, along with a few queries which has been made to validate that the created star schema has been completed successfully.
+- create_table.py - is where the star schema in Redshift, consisting of fact and dimension tables are created.
+- etl.py - is where data gets loaded from S3 buckets into staging tables on Redshift and then inserted into the analytics tables on Redshift.
+- sql_queries.py - is where SQL statements are defined, which are then used by etl.py, create_table.py and create_redshift_cluster.ipynb.
+- README.md - is current file with basic project description and instruction.
 
 ## Data Warehouse Schema
 

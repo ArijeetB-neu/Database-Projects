@@ -10,20 +10,61 @@ This project proposal focuses on helping an NGO to provide services offered by P
 
 ## Entities/tables
 - NGO - contains details of any given NGO
+```
+ ngoId, ngoName, Address, City, ContactNo
+```
 - hospital - hospital entity contains the details of all the hospitals we have in the database
+```
+ hospitalId, hospitalName, Address, City, ContactNo
+```
 - patient - patient table holds the record of all the patients from different hospitals we have
+```
+ patientId, patientFName, patientLName, Gender, patientDob, patientAddress, City, contactNo, patientSSN, patientIncome($), patientCreatedOn, ngoId, hospitalId
+```
 - employee - employee table has the record of all the employed people from the hospital. It is the supertype for doctor and labAssistant subtypes, i.e. the two types of employed persons working in the hospital
+```
+ empId, empFName, empLName, Address, City, ContactNo, Dob, empSSN, hospitalId
+```
 - doctor - doctor entity is the subtype for employee table
+```
+ doctorId, empId, specialization, visitingHours
+```
 - labAssistant - labAssistant table is the subtype for employee table
+```
+ labAssistantId, empId, workingHours
+```
 - diagnosis - diagnosis entity captures the diagnosis details if diagnosis is required after consultation.
+```
+ diagnosisId, testDate, testType, result, labAssistantId, consultationId
+```
 - testType - testType table is connected to diagnosis entity which captures the different types of tests that can be performed
+```
+ testId, testName
+```
 - docSpecialization - docSpecialization table table gives us the specialization of all the doctor specialization available in the database
+```
+ docSpecializationId, specializationName
+```
 - consultation - this table captures the doctor - patient consultation and based on the consultation the doctor decides if there will be future diagnosis or not.
+```
+ consultationId, consultationDate, diseaseType, patientId, doctorId
+```
 - diseaseType - diseaseType table is connected to consultation table which captures the types of diseases that a patient can possibly have
+```
+ diseaseId, diseaseName
+```
 - prescription - prescription table is connected to diseaseType table and it captures the prescription assigned to the patient after consultation.
+```
+ prescriptionId, medName, medPower, medQuantity, medFrequency, pharmacyId, consultationId
+```
 - pharmacy - pharmacy entity is connected to prescription table and each prescriptionId has a single medicine details which the patient gets from the pharmacy entity
+```
+ pharmacyId, pharmacyName, Address, City, ContactNo
+```
 - Bill - finally, bill entity generates the bill amount to be paid which is paid by the NGO if the patientIncome attribute from the patient table qualifies the patient to be covered by the NGO
-
+```
+ billId, amount, tax, billDate, diagnosisId, consultationId
+```
 ## Project Files
 1. Hospital NGO Services DataBase.pptx - presentation showcasing the ER diagram, different SQL scripts, data visualization with Power BI
 2. SQL Scripts

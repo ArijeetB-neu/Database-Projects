@@ -5,9 +5,9 @@ In this project, we will create our own custom operators to perform tasks such a
 
 Project Datasets
 
-Song Data Path
+Song Data Path -> contains song details
 
-Log Data Path 
+Log Data Path -> contains user logging details
 
 Project Template
 

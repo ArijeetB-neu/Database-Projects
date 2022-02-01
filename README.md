@@ -25,14 +25,14 @@ Created a datawarehouse utilizing Amazon Redshift. Skills include:
 
 Proficiencies used: Python, Amazon Redshift, aws cli, Amazon SDK, SQL, PostgreSQL
 
-## Project 4: [Data Lake - Spark](https://github.com/ArijeetB-neu/Database-Projects/tree/main/P3-DataWarehouse-AWS%20Redshift).
+## Project 4: [Data Lake - Spark](https://github.com/ArijeetB-neu/Database-Projects/tree/main/P4-Datalake-Spark).
 Scaled up the current ETL pipeline by moving the data warehouse to a data lake. Skills include:
 * Create an EMR Hadoop Cluster
 * Further develop the ETL Pipeline copying datasets from S3 buckets, data processing using Spark and writing to S3 buckets using efficient partitioning and parquet formatting.
 
 Proficiencies used: Spark, S3, EMR, Amazon Glue, Parquet.
 
-## Project 5: [Data pipelines - Airflow](https://github.com/ArijeetB-neu/Database-Projects/tree/main/P3-DataWarehouse-AWS%20Redshift).
+## Project 5: [Data pipelines - Airflow](https://github.com/ArijeetB-neu/Database-Projects/tree/main/P5-Data%20Pipelines%20-%20Airflow).
 Automate the ETL pipeline and creation of data warehouse using Apache Airflow. Skills include:
 * Using Airflow to automate ETL pipelines using Airflow, Python, Amazon Redshift
 * Writing custom operators to perform tasks such as staging data, filling the data warehouse, and validation through data quality checks.
